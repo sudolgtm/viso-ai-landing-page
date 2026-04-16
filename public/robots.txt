@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://beneficial-astonishing-penguin-nr18jd.teleporthq.app/sitemap.xml
+Sitemap: https://withviso.com/sitemap.xml
