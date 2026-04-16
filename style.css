@@ -890,6 +890,14 @@
   color: var(--color-on-primary);
   background: var(--color-primary);
 }
+
+/* Offset for anchor scrolling to account for sticky header */
+#hero,
+#features,
+#how-it-works,
+#pricing {
+  scroll-margin-top: 80px;
+}
  
 
  
