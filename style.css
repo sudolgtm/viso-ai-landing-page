@@ -8,16 +8,16 @@
   --spacing-2xl: 2rem;
   --spacing-3xl: 3rem;
   --spacing-4xl: 4rem;
-  --color-accent: #00ffc8;
-  --color-border: #d6e3ee;
+  --color-accent: #8fe2a1;
+  --color-border: #dfeee6;
   --font-size-lg: clamp(1.125rem, 1.05rem + 0.4vw, 1.25rem);
   --font-size-sm: clamp(0.85rem, 0.8rem + 0.25vw, 1rem);
   --font-size-xl: clamp(1.25rem, 1.15rem + 0.6vw, 1.5rem);
   --font-size-xs: clamp(0.7rem, 0.6rem + 0.2vw, 0.85rem);
   --color-neutral: #e6edf5;
-  --color-outline: #00d9ff;
+  --color-outline: #69c27f;
   --color-overlay: color-mix(in oklab, #000000 40%, transparent);
-  --color-primary: #00a7c2;
+  --color-primary: #5ebc67;
   --color-surface: #ffffff;
   --divider-value: 1px solid var(--color-outline);
   --font-size-2xl: clamp(1.5rem, 1.35rem + 0.9vw, 1.85rem);
@@ -794,10 +794,17 @@
   width: 40px;
   height: 40px;
   display: flex;
-  background: var(--color-primary);
+  background: transparent;
   align-items: center;
   border-radius: var(--border-radius-md);
   justify-content: center;
+}
+
+.navigation-logo-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
 }
  
 .navigation-brand {
@@ -1004,6 +1011,11 @@
   gap: var(--spacing-lg);
   display: flex;
   flex-wrap: wrap;
+}
+
+/* Temporarily hide legal links in footer */
+.footer-legal-links {
+  display: none !important;
 }
  
 .footer-status-dot {
