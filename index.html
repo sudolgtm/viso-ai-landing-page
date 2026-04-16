@@ -33,21 +33,6 @@
         fill: var(--color-on-surface);
       }
     </style>
-    <script>
-      const params = new URLSearchParams(window.location.search);
-      if (params.get('signup-submitted') === 'true') {
-        document.getElementById('sign-up-success-msg').style.display = 'block';
-
-        // Optional: clean the URL so refreshing doesn't re-show the message
-        window.history.replaceState({}, '', window.location.pathname);
-      }
-      if (params.get('contact-submitted') === 'true') {
-        document.getElementById('contact-success-msg').style.display = 'block';
-
-        // Optional: clean the URL so refreshing doesn't re-show the message
-        window.history.replaceState({}, '', window.location.pathname);
-      }
-    </script>
     <link
       rel="stylesheet"
       href="https://unpkg.com/animate.css@4.1.1/animate.css"
@@ -362,7 +347,6 @@
                   <div class="form-grid">
                     <div class="form-field">
                       <input type="hidden" name="access_key" value="d4c58cde-6381-4928-9af2-dd23707c19e2">
-                      <input type="hidden" name="redirect" value="https://withviso.com/?signup-submitted=true">
                       <label for="hero-name">Full Name</label>
                       <input
                         type="text"
@@ -934,8 +918,7 @@
                     method="POST"
                     class="contact-form"
                   >
-                    <input type="hidden" name="access_key" value="d4c58cde-6381-4928-9af2-dd23707c19e2">
-                    <input type="hidden" name="redirect" value="https://withviso.com/?contact-submitted=true">
+                    <input type="hidden" name="access_key" value="24d03204-e90c-4208-9feb-e788e8b805c9">
                     <div class="form-field">
                       <input
                         type="text"
@@ -1191,5 +1174,20 @@
         href="https://withviso.com/"
       />
     </div>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('signup-submitted') === 'true') {
+        document.getElementById('sign-up-success-msg').style.display = 'block';
+
+        // Optional: clean the URL so refreshing doesn't re-show the message
+        window.history.replaceState({}, '', window.location.pathname);
+      }
+      if (params.get('contact-submitted') === 'true') {
+        document.getElementById('contact-success-msg').style.display = 'block';
+
+        // Optional: clean the URL so refreshing doesn't re-show the message
+        window.history.replaceState({}, '', window.location.pathname);
+      }
+    </script>
   </body>
 </html>
