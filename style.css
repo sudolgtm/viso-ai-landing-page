@@ -746,12 +746,12 @@
 .navigation-wrapper {
   top: 0;
   width: 100%;
-  padding: var(--spacing-md) 0;
+  padding: var(--spacing-lg) 0;
   z-index: 1000;
   position: sticky;
   background: var(--color-surface);
   transition: all 0.3s ease;
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: none;
 }
  
 .navigation-container {
@@ -1366,7 +1366,6 @@
 }
  
 .pricing-value {
-  font-size: var(--font-size-4xl);
   font-weight: 800;
   margin-bottom: var(--spacing-lg);
 }
