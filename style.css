@@ -1399,6 +1399,7 @@
   padding: 0;
   list-style: none;
   flex-direction: column;
+  min-height: 200px;
 }
  
 .pricing-badge {
