@@ -30,4 +30,4 @@ ai-train: no
 User-agent: *
 Allow: /
 
-Sitemap: https://withviso.com/sitemap.xml
+Sitemap: https://ai.withviso.com/sitemap.xml
